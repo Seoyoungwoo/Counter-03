@@ -24,6 +24,10 @@ class ViewController: UIViewController {
 
       }
       
+      @IBAction func btreset(_ sender: Any) {
+            Count = 0;
+            lbnumber.text = "\(Count)"
+      }
       override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
