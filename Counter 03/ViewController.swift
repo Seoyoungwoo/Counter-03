@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
       var Count:Int = 0;
+      var color = 0
       
       @IBOutlet weak var lbnumber: UILabel!
       override func viewDidLoad() {
@@ -27,6 +28,18 @@ class ViewController: UIViewController {
       @IBAction func btreset(_ sender: Any) {
             Count = 0;
             lbnumber.text = "\(Count)"
+      }
+      
+      
+      @IBAction func btcolor(_ sender: Any) {
+            if (color<1){
+                  view.backgroundColor = UIColor.yellow
+                  color = color + 1
+            } else {
+                  view.backgroundColor = UIColor.green
+                  color = color - 1
+            }
+            
       }
       override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()

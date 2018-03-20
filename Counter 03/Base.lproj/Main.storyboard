@@ -30,6 +30,23 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJV-Zb-n6E">
+                                <rect key="frame" x="247" y="361" width="93" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <state key="normal" title="Reset"/>
+                                <connections>
+                                    <action selector="btreset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMM-YX-v2M"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mpg-hd-oBr">
+                                <rect key="frame" x="170" y="371" width="35" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="color"/>
+                                <connections>
+                                    <action selector="btcolor:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uRR-cs-oCx"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u0f-zd-J0M">
                                 <rect key="frame" x="56" y="374" width="74" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -37,15 +54,6 @@
                                 <state key="normal" title="Tap"/>
                                 <connections>
                                     <action selector="btTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hFc-lD-gYg"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IJV-Zb-n6E">
-                                <rect key="frame" x="211" y="361" width="93" height="51"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
-                                <state key="normal" title="Reset"/>
-                                <connections>
-                                    <action selector="btreset:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XMM-YX-v2M"/>
                                 </connections>
                             </button>
                         </subviews>
