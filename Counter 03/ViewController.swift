@@ -10,11 +10,20 @@ import UIKit
 
 class ViewController: UIViewController {
 
+      var Count:Int = 0;
+      
+      @IBOutlet weak var lbnumber: UILabel!
       override func viewDidLoad() {
             super.viewDidLoad()
             // Do any additional setup after loading the view, typically from a nib.
       }
+      @IBAction func btTap(_ sender: Any) {
+            print("btTap \(Count)")
+            Count = Count + 1
+          lbnumber.text = "\(Count)"
 
+      }
+      
       override func didReceiveMemoryWarning() {
             super.didReceiveMemoryWarning()
             // Dispose of any resources that can be recreated.
